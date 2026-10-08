@@ -11,12 +11,12 @@ Promise.resolve(arr)
 		}, 1000)
 	});
 	.then((evenArr)=>{
-	let mulArr = arr.map(num=>num*2);
+	let mulArr = evenArr.map(num=>num*2);
 	return new Promise((resolve)=>{
 		setTimeout(()=>{
 			output.textContent = mulArr;
 			resolve(mulArr);
-		}, 2000);
+		}, 3000);
 	})
 	})
 })
